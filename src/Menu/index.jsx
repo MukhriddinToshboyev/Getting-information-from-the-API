@@ -6,6 +6,7 @@ import {
   FaPhone,
   FaEnvelope,
   FaBuilding,
+  FaGlobe,
 } from "react-icons/fa";
 
 function Menu({ dish }) {
@@ -19,28 +20,36 @@ function Menu({ dish }) {
           {dish?.map((item) => (
             <div key={item.id} className="menu-item">
               <h2 className="menu-item__name">
-                <FaUser style={{ color: "white" }} size={24} />
-                Name: {item.name}
+                <FaUser style={{ color: "white" }} size={18} />
+                Name <br /> {item.name}
               </h2>
-              <h2 className="menu-item__username">Username: {item.username}</h2>
+              <p className="menu-item__username">
+                Username <br /> {item.username}
+              </p>
               <hr style={{ width: "100%" }} />
 
               <p className="menu-item__phone">
-                <FaPhone style={{ color: "white" }} size={24} />
-                Phone number: {item.phone}
+                <FaPhone style={{ color: "white" }} size={18} />
+                Phone number <br /> {item.phone}
               </p>
               <p className="menu-item__email">
-                <FaEnvelope style={{ color: "white" }} size={24} />
-                Email address {item.email}
+                <FaEnvelope style={{ color: "white" }} size={18} />
+                Email address <br />
+                {item.email}
               </p>
-              <p className="menu-item__website">Website: {item.website}</p>
+              <p className="menu-item__website">
+                <FaGlobe style={{ color: "white" }} size={18} />
+                Website {item.website}
+              </p>
               <hr style={{ width: "100%" }} />
               <div className="menu-item__company">
-                <FaBuilding style={{ color: "white" }} size={24} />
+                <FaBuilding style={{ color: "white" }} size={18} />
                 Company
-                <p> name: {item.company.name} </p>
-                <p> catchPhrase: {item.company.catchPhrase} </p>
-                <p> bs: {item.company.bs} </p>
+                <p>
+                  {" "}
+                  {item.company.name} {item.company.catchPhrase}{" "}
+                  {item.company.bs}{" "}
+                </p>
               </div>
               <hr style={{ width: "100%" }} />
               <div className="menu-item__address">

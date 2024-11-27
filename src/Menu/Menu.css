@@ -41,34 +41,10 @@
   color: #ffff;
 }
 
-.menu-item__name {
+.menu-item h2 {
   font-size: 1.2rem;
-  color: #ffff;
 }
 
-.menu-item__username {
-  font-size: 1.2rem;
-  color: #ffff;
-}
-
-.menu-item__email {
+.menu-item p {
   font-size: 0.7rem;
-}
-
-.menu-item__phone {
-  font-size: 0.7rem;
-}
-
-.menu-item__website {
-  font-size: 0.7rem;
-}
-
-.menu-item__company {
-  font-size: 0.7rem;
-}
-
-.menu-item__address {
-  font-size: 0.7rem;
-  display: flex;
-  flex-direction: column;
 }
