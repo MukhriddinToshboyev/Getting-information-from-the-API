@@ -26,22 +26,21 @@ function Menu({ dish }) {
               <p className="menu-item__username">
                 Username <br /> {item.username}
               </p>
-              <hr style={{ width: "100%" }} />
 
-              <p className="menu-item__phone">
+              <div className="menu-item__phone">
                 <FaPhone style={{ color: "white" }} size={18} />
-                Phone number <br /> {item.phone}
-              </p>
-              <p className="menu-item__email">
+                Phone number <p>{item.phone}</p>
+              </div>
+              <div className="menu-item__email">
                 <FaEnvelope style={{ color: "white" }} size={18} />
-                Email address <br />
-                {item.email}
-              </p>
-              <p className="menu-item__website">
+                Email address
+                <p> {item.email}</p>
+              </div>
+              <div className="menu-item__website">
                 <FaGlobe style={{ color: "white" }} size={18} />
-                Website {item.website}
-              </p>
-              <hr style={{ width: "100%" }} />
+                Website <p>{item.website}</p>
+              </div>
+
               <div className="menu-item__company">
                 <FaBuilding style={{ color: "white" }} size={18} />
                 Company
@@ -51,7 +50,7 @@ function Menu({ dish }) {
                   {item.company.bs}{" "}
                 </p>
               </div>
-              <hr style={{ width: "100%" }} />
+
               <div className="menu-item__address">
                 <FaHome style={{ color: "white" }} size={24} />
                 Address

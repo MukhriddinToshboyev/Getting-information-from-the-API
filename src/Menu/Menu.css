@@ -43,8 +43,12 @@
 
 .menu-item h2 {
   font-size: 1.2rem;
+  display: flex;
 }
 
 .menu-item p {
   font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
