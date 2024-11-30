@@ -4,7 +4,7 @@ import { useState } from "react";
 import Menu from "../Menu";
 
 function Home() {
-  const [dish, setDish] = useState([]);
+  const [card, setCard] = useState([]);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -12,11 +12,11 @@ function Home() {
         "https://jsonplaceholder.typicode.com/users"
       );
       const data = await response.json();
-      setDish(data);
+      setCard(data);
     };
     fetchUsers();
   }, []);
-  console.log(dish);
+  console.log(card);
 
   return (
     <div className="home-container">
@@ -34,7 +34,7 @@ function Home() {
         </div>
       </header>
       <section className="home-section">
-        <Menu dish={dish} />
+        <Menu card={card} />
       </section>
     </div>
   );
