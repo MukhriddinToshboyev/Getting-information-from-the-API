@@ -1,13 +1,6 @@
 import "./Menu.css";
-import React from "react";
-import {
-  FaUser,
-  FaHome,
-  FaPhone,
-  FaEnvelope,
-  FaBuilding,
-  FaGlobe,
-} from "react-icons/fa";
+
+import { FaUser, FaPhone, FaEnvelope, FaGlobe } from "react-icons/fa";
 
 function Menu({ card }) {
   const handleOpenLocation = (item1, item2) => {
@@ -42,7 +35,7 @@ function Menu({ card }) {
                   <FaPhone className="menu-icon" />
                   Phone number
                 </span>{" "}
-                <h2>{item.phone}</h2>
+                <h2>({item.phone})</h2>
               </div>
               <div className="menu-item__name">
                 <span>
@@ -62,7 +55,6 @@ function Menu({ card }) {
               </div>
 
               <div className="menu-item__name">
-                Geo lat
                 <button
                   onClick={() =>
                     handleOpenLocation(
